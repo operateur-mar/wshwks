@@ -1250,10 +1250,24 @@ hr.hr-heading {
 .ex-header h1{
 	text-align: right;
 }
-.ex-basic-1 p,h2,h3,h4,h5,h6,ul,li{
+.pt-3 p,h2,h3,h4,h5,h6,ul,li{
 	color: black;
 	direction: rtl;
 	text-align: right;
+}
+.mb-3{
+	color: black;
+}
+.mb-5 li{
+	color: black;
+}
+.pt-4 p,h2,h3,h4,h5,h6,ul,li{
+	color: black;
+	direction: rtl;
+	text-align: right;
+}
+.tabs-1 p,h2,h3,h4,h5,h6,ul,li{
+	color: white;
 }
 .ex-basic-1 .text-box{
 	color: white!important;
