@@ -39,6 +39,8 @@ Colors:
 	--darkbg: #262431;
 	--fontcolor: #f1f1f8;
 	--purple : #592773; 
+	--arfont : 'Cairo', sans-serif;
+
 }
 body,
 html {
@@ -423,26 +425,28 @@ hr.hr-heading {
 	margin-right: 10px;
 }
 .navbar .lang{
-	background-color:#b9374f;
+	background-color:var(--purple);
 	margin: 0 0;
-	padding: 5px 10px 5px 0px;
-	border-left: 1px solid #fff;
+	padding: 5px 9px;
+	/*border-left: 1px solid #fff;*/
 	display: flex;
 	text-decoration: none;
 	border-radius: 50px;
 	align-items: center;
 }
 
-.navbar .lang:nth-child(1){
-	border-left: none;
-}
-.navbar .lang a{
+.navbar .lang{
 	text-decoration: none;
+	font-family: var(--arfont);
 }
 
 .navbar .lang img{
 	width: 20px;
 	margin: 0 5px;
+}
+.navbar .navcontentitems{
+	display: flex;
+    flex-direction: row;
 }
 
 .offcanvas-collapse {
