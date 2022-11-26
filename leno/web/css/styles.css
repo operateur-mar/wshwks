@@ -1210,6 +1210,17 @@ hr.hr-heading {
 	/*border-top: 1px solid #fff;*/
 	background-color: var(--purple);
 }
+.footer-container{
+	display: flex;
+    flex-direction: row-reverse;
+}
+.footer-col.firs{
+	margin-right: 0;
+}
+.footer-col.second{
+	margin-right: 0!important;
+	margin-left: 6rem;
+}
 
 .footer a {
 	text-decoration: none;
@@ -1288,6 +1299,7 @@ hr.hr-heading {
 	color: #9f9caf;
 	text-decoration: none;
 	font-family: var(--arfont);
+	text-align: right;
 }
 
 
