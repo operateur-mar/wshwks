@@ -482,6 +482,7 @@ hr.hr-heading {
 	visibility: visible;
 	-webkit-transform: translateX(-100%);
 	transform: translateX(-100%);
+	z-index: 1;
 }
 
 .navbar .navbar-nav {
@@ -764,7 +765,7 @@ hr.hr-heading {
 	margin-bottom: 1.75rem;
 }
 .tabs-1 .list-unstyled .d-flex .icon{
-	z-index: -55;
+	z-index: 0;
 }
 
 .tabs-1 .list-unstyled .fa-stack {
@@ -1879,11 +1880,13 @@ hr.hr-heading {
 		background-color: transparent;
 		overflow-y: visible;
 		visibility: visible;
+		
 	}
 
 	.offcanvas-collapse.open {
 		-webkit-transform: none;
 		transform: none;
+		
 	}
 
 	.navbar .navbar-nav {
