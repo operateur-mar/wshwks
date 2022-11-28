@@ -477,6 +477,8 @@ hr.hr-heading {
 .navbar .navbar-nav {
 	margin-top: 0.75rem;
 	margin-bottom: 0.5rem;
+	text-align: right;
+
 }
 
 .navbar .nav-item .nav-link {
@@ -1000,6 +1002,7 @@ hr.hr-heading {
 .basic-3 {
 	padding-top: 4.25rem;
 	padding-bottom: 4rem;
+	background-color: var(--purple);
 }
 
 .basic-3 .text-container {
@@ -1729,7 +1732,6 @@ hr.hr-heading {
 	.navbar .navbar-nav {
 		margin-top: 0;
 		margin-bottom: 0;
-		text-align: right;
 	}
 	
 	.navbar .nav-item .nav-link {
