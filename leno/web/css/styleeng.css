@@ -1151,10 +1151,10 @@ hr.hr-heading {
 /*     Footer     */
 /******************/
 .footer {
-	padding-top: 6.5rem;
-	padding-bottom: 1.5rem;
+	padding-top: 3rem;
+	padding-bottom: 0;
 	/*border-top: 1px solid #fff;*/
-	background-color: #2f2c3d;
+	background-color: var(--purple);
 }
 
 .footer a {

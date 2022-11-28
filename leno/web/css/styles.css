@@ -715,7 +715,7 @@ hr.hr-heading {
 }
 
 .tabs-1 .p-heading {
-	margin-bottom: 3.125rem;
+	margin-bottom: 10px;
 	text-align: center;
 	font-family: var(--arfont);
 }
@@ -1233,7 +1233,7 @@ hr.hr-heading {
 
 /* ======================================= */ 
 .footer {
-	padding-top: 6.5rem;
+	padding-top: 3rem;
 	padding-bottom: 1.5rem;
 	/*border-top: 1px solid #fff;*/
 	background-color: var(--purple);
@@ -1721,6 +1721,12 @@ hr.hr-heading {
 		}
 		.footer .third-sandbox{
 			text-align: right;
+		}
+		.footer .footerpart{
+			margin: 2em 0;
+		}
+		.footer .footerpart:nth-child(1){
+			
 		}
 		
 }
