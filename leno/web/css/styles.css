@@ -1310,6 +1310,17 @@ hr.hr-heading {
 .footer .p-small a{
 	margin: 0 10px;
 }
+.footer .footer-contact {
+	font-family: var(--arfont);
+}
+.footer .footer-contact a{
+	color: var(--blue);
+	transition: .4s;
+}
+.footer .footer-contact a:hover{
+	color: #fff;
+}
+
 
 
 
