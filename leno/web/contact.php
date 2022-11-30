@@ -98,36 +98,24 @@
         <!-- Handling Email Details  -->
 
         <?php
-        if(isset($_POST['submit'])) {
-            $mailto = "the.dr.rida@gmail.com";  //My email address
-            //getting customer data
-            $name = $_POST['floatingInput4']; //getting customer name
-            $fromEmail = $_POST['floatingInput5']; //getting customer email
-            $subject = "رسالة جديدة من مستخدم واش وركس";
-            $message = $_POST['floatingTextarea1']; //getting customer Phome number   
-            
-            //Email body I will receive
-            $message = "From: " . $name . "\n"
-            . "Email: " . $fromEmail . "\n\n"
-            . " Message: " . "\n" . $message;
-            
-            //Email headers
-            $headers = "From: " . $fromEmail; // Client email, I will receive
-            $headers2 = "From: " . $mailto; // This will receive client
-            
-            //PHP mailer function
-             $result1 = mail($mailto, $subject, $message, $headers); // This email sent to My address
-            // $result2 = mail($fromEmail, $subject2, $message2, $headers2); //This confirmation email to client        
-             //Checking if Mails sent successfully
-            
-             if ($result1) {
-               $success = "تم إرسال الرسالة بنجاح";
-             } else {
-               $failed = "خطأ في إرسال الرسالة";
-             }
-            
-           }
-      ?>
+       if(isset($_POST['submit'])) {
+            $to_email = 'the.dr.rida@gmail.com';
+            $subject = 'رسالة جديدة من نموذج المراسلة واش ووركس';
+            $femail = $_POST['femail'];
+            $fname = $_POST['fname'];
+            $message = $_POST['fmessage'];
+            $headers = 'From:'. $_POST['femail'];
+            $result = mail($to_email,$subject,$message,$headers);
+    
+            if($result){
+                echo " تم إرسال رسالتك بنجاح " ;
+            }
+            else{
+                echo " حدث خطأ أثناء إرسال الرسالة " ;
+            }
+        }    
+           
+        ?>
         <!-- Form -->
         <div class="ex-form-1 pt-5 pb-5">
             <div class="container">
@@ -138,24 +126,24 @@
                         </p>
                         
                         <!-- Contact Form -->
-                        <form>
+                        <form action="/contact.php" method="POST">
                             <div class="mb-4 form-floating">
-                                <input type="text" class="form-control" id="floatingInput4" placeholder="Name">
+                                <input type="text" class="form-control" name= "fname" id="floatingInput4" placeholder="Name">
                                 <label for="floatingInput4">الاسم</label>
                             </div>
                             <div class="mb-4 form-floating">
-                                <input type="email" class="form-control" id="floatingInput5" placeholder="name@example.com">
+                                <input type="email" class="form-control" id="floatingInput5" name="femail" placeholder="name@example.com">
                                 <label for="floatingInput5">البريد الإلكتروني</label>
                             </div>
                             <div class="mb-4 form-floating">
-                                <textarea class="form-control" id="floatingTextarea1" placeholder="Your message here" rows="6"></textarea>
+                                <textarea class="form-control" name="fmessage" id="floatingTextarea1" placeholder="Your message here" rows="6"></textarea>
                                 <label for="floatingTextarea1">اكتب رسالتك هنا</label>
                             </div>
                            <!-- <div class="mb-4 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck2">
                                 <label class="form-check-label" for="exampleCheck2">Quis varius quam quisque id diam enim facilisis <a href="privacy.html">Privacy Policy</a> sine <a href="terms.html">Terms & Conditions</a></label>
                             </div> -->
-                            <button type="submit" class="form-control-submit-button">أرسل</button>
+                            <button type="submit" class="form-control-submit-button" id="submit" name="submit">أرسل</button>
                         </form>
                         <!-- end of contact form -->
 
