@@ -26,72 +26,61 @@
         <link href="css/fontawesome-all.min.css" rel="stylesheet">
         <link href="css/swiper.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
+           <!-- add font -->
+           <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+
         
         <!-- Favicon  -->
         <link rel="icon" href="images/favicon.png">
     </head>
     <body>
         
-        <!-- Navigation -->
-        <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
-            <div class="container">
-
-                <!-- Image Logo -->
-                <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> 
-
-                <!-- Text Logo - Use this if you don't have a graphic logo -->
-                <!-- <a class="navbar-brand logo-text" href="index.html">Leno</a> -->
-
-                <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                    <ul class="navbar-nav ms-auto navbar-nav-scroll">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="article.html">Article</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="features.html">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pricing.html">Pricing</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                <li><a class="dropdown-item" href="article.html">Article Details</a></li>
-                                <li><div class="dropdown-divider"></div></li>
-                                <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
-                                <li><div class="dropdown-divider"></div></li>
-                                <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                    <span class="nav-item social-icons">
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
+          <!-- Navigation -->
+          <nav id="navbarExample" class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
+                <div class="container">
+    
+                    <!-- Image Logo -->
+                    <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png" alt="alternative"></a> 
+    
+                    <!-- Text Logo - Use this if you don't have a graphic logo -->
+                    <!-- <a class="navbar-brand logo-text" href="index.html">Name</a> -->
+    
+                  
+    
+                    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                        <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">الخدمات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">المنتجات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact.php">تواصل</a>
+                            </li>
+                           
+                        </ul>
+                        
+                    </div> <!-- end of navbar-collapse -->
+                    <div class="navcontentitems">
+                        <span class="nav-item social-icons">
+                            <a class="lang" href="../en/index.html">English</a> 
+                            <!-- <a class="lang" href=""><img src="../web/images/united-kingdom.png" alt="" srcset="">EN</a>-->
                         </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </span>
-                </div> <!-- end of navbar-collapse -->
-            </div> <!-- end of container -->
-        </nav> <!-- end of navbar -->
-        <!-- end of navigation -->
+                        <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div> <!-- end of container -->
+            </nav> <!-- end of navbar -->
+            <!-- end of navigation -->
 
 
         <!-- Header -->
@@ -99,40 +88,74 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-10 offset-xl-1">
-                        <h1>Contact info</h1>
+                        <h1>تواصل معنا</h1>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
         </header> <!-- end of ex-header -->
         <!-- end of header -->
 
+        <!-- Handling Email Details  -->
 
+        <?php
+        if(isset($_POST['submit'])) {
+            $mailto = "the.dr.rida@gmail.com";  //My email address
+            //getting customer data
+            $name = $_POST['floatingInput4']; //getting customer name
+            $fromEmail = $_POST['floatingInput5']; //getting customer email
+            $subject = "رسالة جديدة من مستخدم واش وركس";
+            $message = $_POST['floatingTextarea1']; //getting customer Phome number   
+            
+            //Email body I will receive
+            $message = "From: " . $name . "\n"
+            . "Email: " . $fromEmail . "\n\n"
+            . " Message: " . "\n" . $message;
+            
+            //Email headers
+            $headers = "From: " . $fromEmail; // Client email, I will receive
+            $headers2 = "From: " . $mailto; // This will receive client
+            
+            //PHP mailer function
+             $result1 = mail($mailto, $subject, $message, $headers); // This email sent to My address
+            // $result2 = mail($fromEmail, $subject2, $message2, $headers2); //This confirmation email to client        
+             //Checking if Mails sent successfully
+            
+             if ($result1) {
+               $success = "تم إرسال الرسالة بنجاح";
+             } else {
+               $failed = "خطأ في إرسال الرسالة";
+             }
+            
+           }
+      ?>
         <!-- Form -->
         <div class="ex-form-1 pt-5 pb-5">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-10 offset-xl-1">
-                        <p class="mb-5">Duis at consectetur lorem donec. Dignissim enim sit amet venenatis urna cursus eget nunc scelerisque vromo sepa direc <a href="mailto:contact@site.com">contact@site.com</a> noto vonter rica <a href="tel:123-456-7890">+123-456-7890</a></p>
+                        <p class="mb-5">
+                            تواصل معنا وراسلنا بردودك، اقتراحاتك، أسئلتك والمزيد عبر ملأ الاستمارة التالية، وسنتأكد من إجابتك في أقرب وقت ممكن :
+                        </p>
                         
                         <!-- Contact Form -->
                         <form>
                             <div class="mb-4 form-floating">
                                 <input type="text" class="form-control" id="floatingInput4" placeholder="Name">
-                                <label for="floatingInput4">Name</label>
+                                <label for="floatingInput4">الاسم</label>
                             </div>
                             <div class="mb-4 form-floating">
                                 <input type="email" class="form-control" id="floatingInput5" placeholder="name@example.com">
-                                <label for="floatingInput5">Email</label>
+                                <label for="floatingInput5">البريد الإلكتروني</label>
                             </div>
                             <div class="mb-4 form-floating">
                                 <textarea class="form-control" id="floatingTextarea1" placeholder="Your message here" rows="6"></textarea>
-                                <label for="floatingTextarea1">Message</label>
+                                <label for="floatingTextarea1">اكتب رسالتك هنا</label>
                             </div>
-                            <div class="mb-4 form-check">
+                           <!-- <div class="mb-4 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck2">
                                 <label class="form-check-label" for="exampleCheck2">Quis varius quam quisque id diam enim facilisis <a href="privacy.html">Privacy Policy</a> sine <a href="terms.html">Terms & Conditions</a></label>
-                            </div>
-                            <button type="submit" class="form-control-submit-button">Submit</button>
+                            </div> -->
+                            <button type="submit" class="form-control-submit-button">أرسل</button>
                         </form>
                         <!-- end of contact form -->
 
@@ -164,28 +187,40 @@
         <!-- end of basic -->
 
 
-        <!-- Footer -->
-        <div class="footer bg-dark-blue">
+          <!-- Footer -->
+          <div class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="footer-col first">
-                            <h6>About Website</h6>
-                            <p class="p-small">Aliquam ultrices turpis a auctor commodo. Etiam consectetur tincidunt elit ac euismod. Duis et finibus felis, non porttitor rapena live dolor</p>
-                        </div> <!-- end of footer-col -->
-                        <div class="footer-col second">
-                            <h6>Links</h6>
-                            <ul class="list-unstyled li-space-lg p-small">
-                                <li>Important: <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy Policy</a></li>
-                                <li>Useful: <a href="#">Colorpicker</a>, <a href="#">Icon Library</a>, <a href="#">Illustrations</a></li>
-                                <li>Menu: <a href="index.html">Home</a>, <a href="article.html">Article</a>, <a href="features.html">Features</a>, <a href="contact.html">Contact</a></li>
+                    <div class="col-md-4 footerpart">
+                        <div class="first-sandbox">
+                            <h5>حول الموقع</h5>
+                            <p class="p-small">هنا يتم اضافة وصف خاص بالموقع من أجل التعريف به بالموقع، يمكن تغيير هذا النص لاحقا بما يتناسب مع صاحب الموقع أو خصائص موقع الويب.
+                            </p>
+                            <div class="links">
+                                <ul>
+                                    <li><a href="">شروط الاستخدام</a></li>
+                                    <li><a href="">سياسة الاستخدام</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 footerpart">
+                        <div class="second-sandbox">
+                            <h5>الروابط</h5>
+                            <ul>
+                                <li><a href="">الرابط الأول هنا</a></li>
+                                <li><a href="">الرابط الثاني</a></li>
+                                <li><a href="">انقر هنا مجددا</a></li>
+                                <li><a href="">رابط أخير</a></li>
                             </ul>
-                        </div> <!-- end of footer-col -->
-                        <div class="footer-col third">
+                        </div>
+                    </div>
+                    <div class="col-md-4 footerpart">
+                        <div class="third-sandbox footer-col third">
                             <span class="fa-stack">
                                 <a href="#your-link">
                                     <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                    <i class="fab fa-tiktok fa-stack-1x"></i>
                                 </a>
                             </span>
                             <span class="fa-stack">
@@ -197,22 +232,18 @@
                             <span class="fa-stack">
                                 <a href="#your-link">
                                     <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fab fa-instagram fa-stack-1x"></i>
                                 </a>
                             </span>
-                            <p class="p-small">Quam posuerei pellent esque vam <a href="mailto:contact@site.com"><strong>contact@site.com</strong></a></p>
-                        </div> <!-- end of footer-col -->
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
+
+                            <p class="footer-contact">راسلنا عبر <span><a href="../contact.html">نموذج الإتصال</a></span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div> <!-- end of footer -->  
-        <!-- end of footer -->
+    <!-- end of footer -->
 
 
         <!-- Copyright -->
