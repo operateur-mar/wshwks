@@ -291,7 +291,7 @@ hr.hr-heading {
 .form-floating .form-control {
 	padding-left: 1.25rem;
 	border: 1px solid #726e83;
-	background-color: #423f52;
+	background-color: var(--darkbg);
 	color: var(--fontcolor); 
 	text-align: right;
 }
@@ -1392,6 +1392,13 @@ hr.hr-heading {
 	direction: rtl;
 	color: #000;
 }
+.ex-form-1 .container{
+    padding: 0em 10em 3em 10em;
+}
+.ex-form-1 .container .row{
+	align-items: center;
+    justify-content: center;
+}
 .ex-form-1 .mb-5{
 	color: #000;
 	text-align: right;
@@ -1406,6 +1413,7 @@ hr.hr-heading {
 .ex-header {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
+	background-color: var(--purple);
 }
 .ex-header h1{
 	text-align: right;

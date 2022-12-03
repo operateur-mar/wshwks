@@ -1257,8 +1257,19 @@ hr.hr-heading {
 /*     Extra Pages     */
 /***********************/
 .ex-header {
-	padding-top: 9.5rem;
-	padding-bottom: 4rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	background-color: var(--purple);
+}
+.ex-form-1 .mb-5{
+	color:var(--darkbg);
+}
+.ex-form-1 .container{
+    padding: 0em 10em 3em 10em;
+}
+.ex-form-1 .container .row{
+	align-items: center;
+    justify-content: center;
 }
 
 .ex-basic-1 .list-unstyled .fas {

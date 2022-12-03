@@ -22,10 +22,10 @@
         
         <!-- Styles -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome-all.min.css" rel="stylesheet">
-        <link href="css/swiper.css" rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome-all.min.css" rel="stylesheet">
+        <link href="../css/swiper.css" rel="stylesheet">
+        <link href="../css/styleeng.css" rel="stylesheet">
            <!-- add font -->
            <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,40 +38,37 @@
     </head>
     <body>
         
-          <!-- Navigation -->
-          <nav id="navbarExample" class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
+                <!-- Navigation -->
+                <nav id="navbarExample" class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
                 <div class="container">
     
                     <!-- Image Logo -->
-                    <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png" alt="alternative"></a> 
+                    <a class="navbar-brand logo-image" href="index.html"><img src="../images/logoeng.png" alt="alternative"></a> 
     
                     <!-- Text Logo - Use this if you don't have a graphic logo -->
                     <!-- <a class="navbar-brand logo-text" href="index.html">Name</a> -->
     
-                  
-    
                     <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                         <ul class="navbar-nav ms-auto navbar-nav-scroll">
-                        
                             <li class="nav-item">
-                                <a class="nav-link" href="#services">الرئيسية</a>
+                                <a class="nav-link" href="#header">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">الخدمات</a>
+                                <a class="nav-link" href="#services">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">المنتجات</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/contact.php">تواصل</a>
+                                <a class="nav-link" href="#projects">Projects</a>
                             </li>
                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="../en/contacteng.php">Contact</a>
+                            </li>
                         </ul>
-                        
+                       
                     </div> <!-- end of navbar-collapse -->
                     <div class="navcontentitems">
                         <span class="nav-item social-icons">
-                            <a class="lang" href="../en/index.html">English</a> 
+                            <a class="lang" href="../../index.html">العربية</a> 
                             <!-- <a class="lang" href=""><img src="../web/images/united-kingdom.png" alt="" srcset="">EN</a>-->
                         </span>
                         <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
@@ -88,7 +85,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-10 offset-xl-1">
-                        <h1>تواصل معنا</h1>
+                        <h1>Contact Us</h1>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
@@ -101,7 +98,7 @@
         use PHPMailer\PHPMailer\PHPMailer;
         use PHPMailer\PHPMailer\Exception;
 
-        require 'vendor/autoload.php';
+        require '../vendor/autoload.php';
 
      
 
@@ -157,28 +154,28 @@
                 <div class="row">
                     <div class="col-xl-10 offset-xl-1">
                         <p class="mb-5">
-                            تواصل معنا وراسلنا بردودك، اقتراحاتك، أسئلتك والمزيد عبر ملأ الاستمارة التالية، وسنتأكد من إجابتك في أقرب وقت ممكن :
+                          Share your thoughts, ideas, and comments. Reach out to us through filling this form. We will get back to you as soon as we receive your email:
                         </p>
                         
                         <!-- Contact Form -->
                         <form action="/contact.php" method="POST">
                             <div class="mb-4 form-floating">
                                 <input type="text" class="form-control" name= "fname" id="floatingInput4" placeholder="Name">
-                                <label for="floatingInput4">الاسم</label>
+                                <label for="floatingInput4">Your Name</label>
                             </div>
                             <div class="mb-4 form-floating">
                                 <input type="email" class="form-control" id="floatingInput5" name="femail" placeholder="name@example.com">
-                                <label for="floatingInput5">البريد الإلكتروني</label>
+                                <label for="floatingInput5">Your Email</label>
                             </div>
                             <div class="mb-4 form-floating">
                                 <textarea class="form-control" name="fmessage" id="floatingTextarea1" placeholder="Your message here" rows="6"></textarea>
-                                <label for="floatingTextarea1">اكتب رسالتك هنا</label>
+                                <label for="floatingTextarea1">Your Message</label>
                             </div>
                            <!-- <div class="mb-4 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck2">
                                 <label class="form-check-label" for="exampleCheck2">Quis varius quam quisque id diam enim facilisis <a href="privacy.html">Privacy Policy</a> sine <a href="terms.html">Terms & Conditions</a></label>
                             </div> -->
-                            <button type="submit" class="form-control-submit-button" id="submit" name="submit">أرسل</button>
+                            <button type="submit" class="form-control-submit-button" id="submit" name="submit">SEND</button>
                         </form>
                         <!-- end of contact form -->
 
@@ -209,43 +206,29 @@
        <!-- </div> <!-- end of ex-basic-1 -->
         <!-- end of basic -->
 
-
-          <!-- Footer -->
-          <div class="footer">
+ <!-- Footer -->
+ <div class="footer ">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 footerpart">
-                        <div class="first-sandbox">
-                            <h5>حول الموقع</h5>
-                            <p class="p-small">هنا يتم اضافة وصف خاص بالموقع من أجل التعريف به بالموقع، يمكن تغيير هذا النص لاحقا بما يتناسب مع صاحب الموقع أو خصائص موقع الويب.
-                            </p>
-                            <div class="links">
-                                <ul>
-                                    <li><a href="">شروط الاستخدام</a></li>
-                                    <li><a href="">سياسة الاستخدام</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 footerpart">
-                        <div class="second-sandbox">
-                            <h5>الروابط</h5>
+                    <div class="col-lg-12">
+                        <div class="footer-col first">
+                            <h6>About</h6>
+                            <p class="p-small">Aliquam ultrices turpis a auctor commodo. Etiam consectetur tincidunt elit ac euismod. Duis et finibus felis, non porttitor rapena live dolor</p>
                             <ul>
-                                <li><a href="">الرابط الأول هنا</a></li>
-                                <li><a href="">الرابط الثاني</a></li>
-                                <li><a href="">انقر هنا مجددا</a></li>
-                                <li><a href="">رابط أخير</a></li>
+                                <li><a href="contact.html">Privacy Policy</a></li>
+                                <li><a href="contact.html">Terms & Conddition</a></li>
+                              </ul>
+                        </div> <!-- end of footer-col -->
+                        <div class="footer-col second">
+                            <h6>Links</h6>
+                            <ul>
+                            <li><a href="contact.html">Link</a></li>
+                            <li><a href="contact.html">Link Two</a></li>
+                            <li><a href="contact.html">Link Three</a></li>
+
                             </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4 footerpart">
-                        <div class="third-sandbox footer-col third">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-tiktok fa-stack-1x"></i>
-                                </a>
-                            </span>
+                        </div> <!-- end of footer-col -->
+                        <div class="footer-col third">
                             <span class="fa-stack">
                                 <a href="#your-link">
                                     <i class="fas fa-circle fa-stack-2x"></i>
@@ -258,15 +241,19 @@
                                     <i class="fab fa-instagram fa-stack-1x"></i>
                                 </a>
                             </span>
-
-                            <p class="footer-contact">راسلنا عبر <span><a href="../contact.html">نموذج الإتصال</a></span></p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-tiktok fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <p class="p-small">Contact Us <a href="mailto:contact@site.com"><strong>contact@site.com</strong></a></p>
+                        </div> <!-- end of footer-col -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
         </div> <!-- end of footer -->  
-    <!-- end of footer -->
+        <!-- end of footer -->
 
 
         <!-- Copyright -->
@@ -274,7 +261,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <p class="p-small">Copyright © <a href="#your-link">Your name</a></p>
+                        <p class="p-small">Copyright © <a href="#your-link">WashWorks</a></p>
                     </div> <!-- end of col -->
                 </div> <!-- enf of row -->
             </div> <!-- end of container -->
@@ -284,15 +271,15 @@
 
         <!-- Back To Top Button -->
         <button onclick="topFunction()" id="myBtn">
-            <img src="images/up-arrow.png" alt="alternative">
+            <img src="../images/up-arrow.png" alt="alternative">
         </button>
         <!-- end of back to top button -->
             
         <!-- Scripts -->
-        <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-        <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-        <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
-        <script src="js/replaceme.min.js"></script> <!-- ReplaceMe for rotating text -->
-        <script src="js/scripts.js"></script> <!-- Custom scripts -->
+        <script src="../js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+        <script src="../js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+        <script src="../js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+        <script src="../js/replaceme.min.js"></script> <!-- ReplaceMe for rotating text -->
+        <script src="../js/scripts.js"></script> <!-- Custom scripts -->
     </body>
 </html>
