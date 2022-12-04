@@ -291,22 +291,28 @@ hr.hr-heading {
 .form-floating .form-control {
 	padding-left: 1.25rem;
 	border: 1px solid #726e83;
-	background-color: var(--darkbg);
-	color: var(--fontcolor); 
+	background-color: #fff;
+	color: var(--darkbg); 
 	text-align: right;
 }
 .form-floating .form-control input {
 	text-align: right!important;
+	color: var(--darkbg); 
+
 }
 .form-floating label{
 	text-align: right;
 	direction: rtl;
 	width: 100%;
 	padding: 1em 3em;
+	color: var(--darkbg); 
+
 }
 .form-floating .form-control input::placeholder{
 	text-align: right!important;
 	direction: rtl;
+	color: var(--darkbg); 
+
 }
 .form-select {
 	height: calc(3.5rem + 2px);
@@ -1391,6 +1397,8 @@ hr.hr-heading {
 .ex-form-1{
 	direction: rtl;
 	color: #000;
+	background-color: var(--darkbg);
+	margin-top: -2em;
 }
 .ex-form-1 .container{
     padding: 0em 10em 3em 10em;
@@ -1400,7 +1408,7 @@ hr.hr-heading {
     justify-content: center;
 }
 .ex-form-1 .mb-5{
-	color: #000;
+	color: #fff;
 	text-align: right;
 	font-family: var(--arfont);
 	font-family: 1em;

@@ -274,7 +274,7 @@ hr.hr-heading {
 
 .form-floating label {
 	margin-left: 0.5rem;
-	color: var(--fontcolor); 
+	color: var(--darkbg); 
 }
 
 .form-floating>.form-control:focus~label,
@@ -286,8 +286,8 @@ hr.hr-heading {
 .form-floating .form-control {
 	padding-left: 1.25rem;
 	border: 1px solid #726e83;
-	background-color: #423f52;
-	color: var(--fontcolor); 
+	background-color: #fff;
+	color: var(--darkbg); 
 }
 
 .form-select {
@@ -1261,8 +1261,13 @@ hr.hr-heading {
 	padding-bottom: 3rem;
 	background-color: var(--purple);
 }
+.ex-form-1{
+	color: #000;
+	background-color: var(--darkbg);
+	margin-top: -2em;
+}
 .ex-form-1 .mb-5{
-	color:var(--darkbg);
+	color:#fff;
 }
 .ex-form-1 .container{
     padding: 0em 10em 3em 10em;
