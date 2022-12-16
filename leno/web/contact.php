@@ -100,21 +100,19 @@
         <?php
         use PHPMailer\PHPMailer\PHPMailer;
         use PHPMailer\PHPMailer\Exception;
-
         require 'vendor/autoload.php';
 
-     
 
        if(isset($_POST['submit'])) {
         $sender = $_POST['femail'];
         $senderName = $_POST['fname'];
-        $recipient = 'the.dr.rida@gmail.com';
-        $usernameSmtp = 'AKIAZ2WXQK76WURZENKN';
-        $passwordSmtp = 'BOJOHrNo/IDwNZ7idjvNSnAa25prT0U5an6hlbX9g8Nt';
+        $recipient = 'info@wash-works.sa';
+        $usernameSmtp = 'smtp_username';
+        $passwordSmtp = 'smtp_password';
         $configurationSet = 'ConfigSet';
-        $host = 'email-smtp.us-west-2.amazonaws.com';
+        $host = 'email.me-south-1.amazonaws.com';
         $port = 587;
-            $to_email = 'the.dr.rida@gmail.com';
+            $to_email = 'info@wash-works.sa';
             $subject = 'رسالة جديدة من نموذج المراسلة واش ووركس';
           //  $femail = $_POST['femail'];
           //  $fname = $_POST['fname'];

@@ -109,7 +109,7 @@
         $usernameSmtp = 'smtp_username';
         $passwordSmtp = 'smtp_password';
         $configurationSet = 'ConfigSet';
-        $host = 'email-smtp.us-west-2.amazonaws.com';
+        $host = 'email-smtp.us-east-1.amazonaws.com';
         $port = 587;
             $to_email = 'the.dr.rida@gmail.com';
             $subject = 'رسالة جديدة من نموذج المراسلة واش ووركس';
