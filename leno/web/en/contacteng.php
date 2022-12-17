@@ -106,8 +106,8 @@
         $sender = $_POST['femail'];
         $senderName = $_POST['fname'];
         $recipient = 'the.dr.rida@gmail.com';
-        $usernameSmtp = 'smtp_username';
-        $passwordSmtp = 'smtp_password';
+        $usernameSmtp = 'AKIAZ2WXQK76WURZENKN';
+        $passwordSmtp = 'BOJOHrNo/IDwNZ7idjvNSnAa25prT0U5an6hlbX9g8Nt';
         $configurationSet = 'ConfigSet';
         $host = 'email-smtp.us-east-1.amazonaws.com';
         $port = 587;

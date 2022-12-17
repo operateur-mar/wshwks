@@ -107,8 +107,8 @@
         $sender = $_POST['femail'];
         $senderName = $_POST['fname'];
         $recipient = 'info@wash-works.sa';
-        $usernameSmtp = 'smtp_username';
-        $passwordSmtp = 'smtp_password';
+        $usernameSmtp = 'AKIAZ2WXQK76WURZENKN'; // alternative ses-smtp-user.WashWorks
+        $passwordSmtp = 'BOJOHrNo/IDwNZ7idjvNSnAa25prT0U5an6hlbX9g8Nt';
         $configurationSet = 'ConfigSet';
         $host = 'email.me-south-1.amazonaws.com';
         $port = 587;
