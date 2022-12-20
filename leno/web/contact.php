@@ -127,7 +127,7 @@
         // If you're using Amazon SES in a region other than US West (Oregon),
         // replace email-smtp.us-west-2.amazonaws.com with the Amazon SES SMTP
         // endpoint in the appropriate region.
-        $host = 'email.eu-west-1.amazonaws.com'; //email-smtp.us-west-2.amazonaws.com
+        $host = 'email.me-south-1.amazonaws.com'; //email-smtp.us-west-2.amazonaws.com
         $port = 587;
 
         // The subject line of the email
