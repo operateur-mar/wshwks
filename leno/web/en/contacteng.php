@@ -4,21 +4,25 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
-        <!-- SEO Meta Tags -->
-        <meta name="description" content="Your description">
-            <meta name="author" content="Your name">
+         <!-- SEO Meta Tags -->
+         <meta name="description" content="Contact Wash Works for any further questions">
+       <meta name="title" content="Contact us - Wash Works">
+       <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+       <meta property="og:site_name" content="Contact us - Wash Works" /> <!-- website name -->
+       <meta property="og:site" content="https://wash-works.sa/contact.php" /> <!-- website link -->
+ 
 
-        <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-        <meta property="og:site_name" content="" /> <!-- website name -->
-        <meta property="og:site" content="" /> <!-- website link -->
-        <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-        <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-        <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-        <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-        <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
-
-        <!-- Webpage Title -->
-        <title>Contact Details</title>
+       <meta property="og:title" content="Contact us - Wash Works"/> <!-- title shown in the actual shared post -->
+       <meta property="og:description" content="Contact Wash Works for any further questions" /> <!-- description shown in the actual shared post -->
+       <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+       <meta property="og:url" content="https://wash-works.sa/loyality.html" /> <!-- where do you want your post to link to -->
+       <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+       <meta property="twitter:url" content="https://wash-works.sa/">
+       <meta property="twitter:title" content="Contact us - Wash Works">
+       <meta property="twitter:description" content="Contact Wash Works for any further questions">
+       <meta property="twitter:image" content="">
+       <!-- Webpage Title -->
+       <title>Wash Works - Mobile Car Wash</title>
         
         <!-- Styles -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
