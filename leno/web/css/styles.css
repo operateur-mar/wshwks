@@ -415,16 +415,27 @@ hr.hr-heading {
 /*     FAq   		  */
 .faq-body{
 	padding: 5em 0; 
-	color: var(--darkbg);
+	color: var(--fontcolor);
 	direction: rtl;
+	background-color: var(--darkbg);
 
 }
+.faq-body .questions-sandbox{
+	background-color: var(--fontcolor);
+}
+.faq-body .questions-sandbox p{
+	color: var(--darkbg);
+}
+.faq-body .questions-sandbox h4{
+	color: var(--purple);
+}
+
 .page-headings{
 	text-align: center;
 	margin-bottom: 2em;
 }
 .page-headings p{
-	color: var(--darkbg);
+	color: var(--fontcolor);
 	font-family: var(--arfont);
 }
 .collapse-faq{
@@ -466,6 +477,8 @@ hr.hr-heading {
 .question-area .list-group-item{
 	border: none;
 	font-family: var(--arfont);
+	background-color: var(--fontcolor);
+	color: var(--darkbg);
 }
 .question-area {
 	margin: 3em 0;
@@ -474,8 +487,7 @@ hr.hr-heading {
 	color: var(--darkbg);
 
 }
-.questions-sandbox h3::before{
-	content: "\f053";
+.questions-sandbox h4::before{
 	content: "\f053";
     font-family: 'Font Awesome 5 Free';
     margin: 0 0 0 10px;
@@ -1015,6 +1027,9 @@ hr.hr-heading {
 	display: block;
 	margin: 1rem auto 2rem auto;
 }
+.tab3-row{
+	text-align: right;
+}
 
 
 /*****************/
@@ -1172,10 +1187,10 @@ hr.hr-heading {
 	font-family: var(--arfont);
 }
 .slider-carousal{
-	margin-bottom: 3em;
+	/*margin-bottom: 3em;*/
 }
 .slider-carousal .carousel-item img{
-	height: 500px;
+	height: 700px;
 	object-fit: cover;
 }
 
