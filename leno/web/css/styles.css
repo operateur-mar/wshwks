@@ -564,10 +564,10 @@ hr.hr-heading {
     margin: 0 3em;
 }
 
-@media (max-width: 320px){
+@media (max-width: 426px){
 	.loy-part .ptone{
 		width: 100%;
-		margin: 0 3em;
+		margin: 1em 3em;
 	}
 	.questions-sandbox{
 		padding: 1em 0;
@@ -997,6 +997,7 @@ hr.hr-heading {
 .tabs-1 #tab-1 img {
 	display: block;
 	margin: 2rem auto 5rem auto;
+	width: 100%;
 }
 
 .tabs-1 #tab-2 img {
@@ -1026,9 +1027,11 @@ hr.hr-heading {
 .tabs-1 #tab-3 img {
 	display: block;
 	margin: 1rem auto 2rem auto;
+	width: 100%;
 }
 .tab3-row{
 	text-align: right;
+	padding: 5em 5px;
 }
 
 
