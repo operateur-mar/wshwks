@@ -192,7 +192,7 @@
                         </p>
                         
                         <!-- Contact Form -->
-                        <form action="/contact.php" method="POST">
+                      <!--  <form action="/contact.php" method="POST">
                             <div class="mb-4 form-floating">
                                 <input type="text" class="form-control" name= "fname" id="floatingInput4" placeholder="Name">
                                 <label for="floatingInput4">الاسم</label>
@@ -208,10 +208,14 @@
                            <!-- <div class="mb-4 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck2">
                                 <label class="form-check-label" for="exampleCheck2">Quis varius quam quisque id diam enim facilisis <a href="privacy.html">Privacy Policy</a> sine <a href="terms.html">Terms & Conditions</a></label>
-                            </div> -->
+                            </div> 
                             <button type="submit" class="form-control-submit-button" id="submit" name="submit">أرسل</button>
                         </form>
                         <!-- end of contact form -->
+                        
+
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScrpLi8m9T62yLLrwoTk1V-u1E55ZOWFY23ODm1UlCnYCEYUg/viewform?embedded=true" width="640" height="642" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
 
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
