@@ -530,6 +530,7 @@ hr.hr-heading {
 .loyality-sandbox .parts-container{
 	margin: 3em 0;
 	padding: 2em;
+	text-align: justify;
 }
 .loy-part {
 	display: flex;
@@ -558,6 +559,10 @@ hr.hr-heading {
 }
 .loy-part p{
 	font-family: var(--arfont);
+	text-align: justify;
+}
+.loy-part h4{
+	text-align: justify;
 }
 .loy-part .ptone{
 	width: 40%;
