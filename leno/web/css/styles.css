@@ -832,8 +832,9 @@ hr.hr-heading {
 	text-align: center; 
 	margin: 1em 0;
 } 
-.header .wtspbutton{
+.wtspbutton{
 	margin-top: 2em;
+	font-family: var(--arfont);
 }
 
 /************************/
@@ -952,6 +953,8 @@ hr.hr-heading {
 .tabs-1 p{
 	font-family: var(--arfont);
 	margin-top: 10px;
+	font-size: 25px;
+    line-height: 2;
 }
 .tabs-1 .nav-link.active,
 .tabs-1 .nav-link:hover {
@@ -2332,6 +2335,9 @@ hr.hr-heading {
 
 
 	/* Features */
+	.tabs-1 .row{
+		align-items: center;
+	}
 	.tabs-1 #tab-1 .list-unstyled.first .d-flex {
 		flex-direction: row-reverse;
 		
