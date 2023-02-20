@@ -783,8 +783,53 @@ hr.hr-heading {
 .navbar-toggler-icon{
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important;
 }
+/************************/
+/*     Products     */
+/************************/
+.products{
+background-color: var(--darkbg);
+}
+.products .loyality-sandbox p{margin-bottom: 0;}
+.products .page-headings{ margin-bottom: 0;}
+.products-sandbox{
+	background-color: var(--darkbg);
+	margin-top: 3em;
+	padding-bottom: 2em;
+}
+.products-sandbox .row{}
+.products-sandbox .row .col {
+	margin-top: 2em;
+	display: flex; 
+	justify-content: center;
+}
+.products .card-body{}
+.products .card-body h3{
+	color: var(--darkbg);
+	text-align: center;
+}
+.products .card-body p{
+	color: var(--darkbg);
+	text-align: center;
+	font-family: var(--arfont);
+}
+.products .card-body .wtspbutton{
+	text-align: center;
+    justify-content: center;
+    display: flex;
+}
+/*****************/
+/*    Map     */
 
-
+.map {
+	margin: 5em 5em 0 5em; 
+	display: flex;
+	justify-content: center;
+	padding-bottom: 3em;
+}
+.map img{
+	width: 700px;
+}
+/*****************/
 /*****************/
 /*    Header     */
 /*****************/
@@ -951,6 +996,12 @@ hr.hr-heading {
 	transition: all 0.2s ease;
 }
 .tabs-1 p{
+	font-family: var(--arfont);
+	margin-top: 10px;
+	font-size: 25px;
+    line-height: 2;
+}
+.tabs-1 ul li{
 	font-family: var(--arfont);
 	margin-top: 10px;
 	font-size: 25px;
