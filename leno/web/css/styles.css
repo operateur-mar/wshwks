@@ -541,7 +541,7 @@ hr.hr-heading {
 	align-items: center;
 	
 }
-.qrcodelist h2 , .qrcodelist p {
+.qrcodelist h3 , .qrcodelist p {
 	color: var(--darkbg)!important;
 }
 .qrcodelist img{
@@ -567,6 +567,10 @@ hr.hr-heading {
 .loy-part .ptone{
 	width: 40%;
     margin: 0 3em;
+}
+.loy-part .ptone ol li{
+	font-family: var(--arfont);
+	margin: 10px 0;
 }
 
 @media (max-width: 426px){
@@ -821,13 +825,21 @@ background-color: var(--darkbg);
 /*    Map     */
 
 .map {
-	margin: 5em 5em 0 5em; 
+	margin: 3em 5em 0 5em; 
 	display: flex;
 	justify-content: center;
 	padding-bottom: 3em;
 }
 .map img{
 	width: 700px;
+}
+.map-sandbox .cities{
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	font-family: var(--arfont);
 }
 /*****************/
 /*****************/
