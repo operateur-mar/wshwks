@@ -590,6 +590,18 @@ hr.hr-heading {
 		/*flex-direction: column-reverse;*/
 	}
 }
+
+/**********************/
+/* JOBS */ 
+.jobs-sandbox{}
+.jobs-sandbox h3{
+	font-size: 1.3em;
+	text-align: center;
+	margin: 2em 0;
+}
+.jobs-sandbox iframe{
+	width: 100%;
+}
 /**********************/
 /*     Navigation     */
 /**********************/
