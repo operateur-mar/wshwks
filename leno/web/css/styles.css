@@ -814,7 +814,7 @@ background-color: var(--darkbg);
 }
 .products-sandbox .row{}
 .products-sandbox .row .col {
-	margin-top: 2em;
+	margin: 2em 0;
 	display: flex; 
 	justify-content: center;
 }
@@ -832,6 +832,39 @@ background-color: var(--darkbg);
 	text-align: center;
     justify-content: center;
     display: flex;
+}
+.hor-card{
+	/*max-width: 650px;*/
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+	background-color: var(--fontcolor); 
+	padding: 7px;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.hor-card img{
+	/*width: 250px;*/
+}
+.hor-card .hor-card-content{
+	font-family: var(--arfont);
+	margin: 0 7px;
+	color: var(--darkbg);
+	margin: 10px 0 0 0;
+}
+.hor-card  p {
+	font-family: var(--arfont);
+	text-align: justify;
+	color: var(--darkbg);
+
+}
+.hor-card .hor-card-content h4 {
+	font-family: var(--arfont);
+	text-align: center;
+	color: var(--darkbg);
+
 }
 /*****************/
 /*    Map     */
