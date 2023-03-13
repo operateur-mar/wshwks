@@ -421,7 +421,7 @@ hr.hr-heading {
 
 }
 .faq-body .questions-sandbox{
-	background-color: var(--fontcolor);
+	background-color: var(--blue);
 }
 .faq-body .questions-sandbox p{
 	color: var(--darkbg);

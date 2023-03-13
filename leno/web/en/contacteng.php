@@ -210,14 +210,14 @@
        <!-- </div> <!-- end of ex-basic-1 -->
         <!-- end of basic -->
 
- <!-- Footer -->
- <div class="footer ">
+  <!-- Footer -->
+  <div class="footer ">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer-col first">
-                            <h6>About</h6>
-                            <p class="p-small">Aliquam ultrices turpis a auctor commodo. Etiam consectetur tincidunt elit ac euismod. Duis et finibus felis, non porttitor rapena live dolor</p>
+                            <h6>About Wash Works</h6>
+                            <p class="p-small">Wash Works started its services in 2023 starting from AlDemam city where the best companies gathered. Our team is experienced and follow the quality guidlines to offer our clients the best services</p>
                             <ul>
                                 <li><a href="contact.html">Privacy Policy</a></li>
                                 <li><a href="contact.html">Terms & Conddition</a></li>
@@ -226,9 +226,11 @@
                         <div class="footer-col second">
                             <h6>Links</h6>
                             <ul>
-                            <li><a href="contact.html">Link</a></li>
-                            <li><a href="contact.html">Link Two</a></li>
-                            <li><a href="contact.html">Link Three</a></li>
+                            <li><a href="contact.html">Products and Services</a></li>
+                            <li><a href="contact.html">Wash Friends</a></li>
+                            <li><a href="contact.html">Hiring</a></li>
+                            <li><a href="contact.html">Geo location</a></li>
+                            <li><a href="../en/faq.html">FAQ</a></li>
 
                             </ul>
                         </div> <!-- end of footer-col -->
@@ -251,7 +253,7 @@
                                     <i class="fab fa-tiktok fa-stack-1x"></i>
                                 </a>
                             </span>
-                            <p class="p-small">Contact Us <a href="mailto:contact@site.com"><strong>contact@site.com</strong></a></p>
+                            <p class="p-small">Contact Us <a href="../en/contacteng.php"><strong>Contact Form</strong></a></p>
                         </div> <!-- end of footer-col -->
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
@@ -265,12 +267,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <p class="p-small">Copyright © <a href="#your-link">WashWorks</a></p>
+                        <p class="p-small">WashWorks© Car cleaning services </p>
                     </div> <!-- end of col -->
                 </div> <!-- enf of row -->
             </div> <!-- end of container -->
         </div> <!-- end of copyright --> 
         <!-- end of copyright -->
+        <a href="#" id="switchdm" class="" onclick="toggledarkmode()">
         
 
         <!-- Back To Top Button -->

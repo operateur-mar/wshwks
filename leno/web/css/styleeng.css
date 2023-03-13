@@ -39,7 +39,9 @@ Colors:
 	--darkbg: #262431;
 	--fontcolor: #f1f1f8;
 	--purple : #592773; 
-	--arfont : 'Cairo', sans-serif;
+	--arfont : 'Almarai', sans-serif;
+	--blue: #24aee4;
+	--arfont2 : 'Cairo', sans-serif;
 
 }
 body,
@@ -675,6 +677,10 @@ hr.hr-heading {
 /********************/
 /*     Features     */
 /********************/
+.tab-pane .col-lg-6{
+	display: flex;
+	align-items: center;
+}
 .tabs-1 {
 	padding-top: 2.5rem;
 	padding-bottom: 5.75rem;
@@ -1147,10 +1153,211 @@ hr.hr-heading {
 	display: none;
 }
 
+/***** FAQ ***** / 
+/*     FAq   		  */
+.faq-body{
+	padding-top: 5em; 
+	color: var(--fontcolor);
+	background-color: var(--darkbg);
+}
+.page-headings{
+	text-align: center;
+}
+.faq-body .questions-sandbox{
+	background-color: var(--fontcolor);
+}
+.faq-body .questions-sandbox p{
+	color: var(--darkbg);
+}
+.faq-body .questions-sandbox h4{
+	color: var(--purple);
+}
+.question-area{
+	padding: 1em;
+}
+.question-area .list-group-item{
+	background-color: var(--fontcolor);
+	border: none;
+}
+.question-area a{
+	color: var(--purple);
+}
+.questions-sandbox h4::before{
+	content: "\f053";
+    font-family: 'Font Awesome 5 Free';
+	margin-right: 10px; 
+	color: var(--purple);
+}
+/************************/
+/*     Products     */
+/************************/
+.products{
+	background-color: var(--darkbg);
+	}
+	.products .loyality-sandbox p{margin-bottom: 0;}
+	.products .page-headings{ margin-bottom: 0; padding-top:2em;}
+	.products-sandbox{
+		background-color: var(--darkbg);
+		margin-top: 3em;
+		padding-bottom: 2em;
+	}
+	.products-sandbox .row{}
+	.products-sandbox .row .col {
+		margin: 2em 0;
+		display: flex; 
+		justify-content: center;
+	}
+	.products .card-body{}
+	.products .card-body h3{
+		color: var(--darkbg);
+		text-align: center;
+	}
+	.products .card-body p{
+		color: var(--darkbg);
+		text-align: center;
+		font-family: var(--arfont);
+	}
+	.products .card-body .wtspbutton{
+		text-align: center;
+		justify-content: center;
+		display: flex;
+	}
+	.hor-card{
+		/*max-width: 650px;*/
+		display: flex;
+		flex-direction: row-reverse;
+		flex-wrap: wrap;
+		background-color: var(--fontcolor); 
+		padding: 7px;
+		justify-content: center;
+		align-items: center;
+	
+	}
+	
+	.hor-card img{
+		/*width: 250px;*/
+	}
+	.hor-card .hor-card-content{
+		font-family: var(--arfont);
+		margin: 0 7px;
+		color: var(--darkbg);
+		margin: 10px 0 0 0;
+	}
+	.hor-card  p {
+		font-family: var(--arfont);
+		text-align: justify;
+		color: var(--darkbg);
+	
+	}
+	.hor-card .hor-card-content h4 {
+		font-family: var(--arfont);
+		text-align: center;
+		color: var(--darkbg);
+	
+	}
+/* loyality */ 
+.loyality-sandbox{
+	padding: 5em 0 0 0; 
+	color: var(--fontcolor);
+	direction: rtl;
+	background-color: var(--darkbg);
+}
+.loyality-sandbox .questions-sandbox{
+	padding: 1em 5em;
+	color: var(--fontcolor);
+	background-color: var(--blue);
+}
+.loyality-sandbox p{
+	color: var(--fontcolor);
+}
+.loyality-sandbox .images{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.loyality-sandbox .images img{
+	width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 1em 1em;
+	border-radius: 15px;
+}
+.loyality-sandbox .parts-container{
+	margin: 3em 0;
+	/*padding: 2em;*/
+	text-align: justify;
+}
+.loy-part {
+	display: flex;
+    justify-content: center;
+	flex-direction: row;
+    flex-wrap: wrap;
+	margin: 5em 0;
+	align-items: center;
+	
+}
+.qrcodelist h3 , .qrcodelist p {
+	color: var(--darkbg)!important;
+}
+.qrcodelist img{
+	width: 150px!important;
+	height: 150px!important;
+}
+.loy-part:nth-child(1){
+	margin: 0;
+}
+.loy-part img{
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 15px;
+}
+.loy-part p{
+	font-family: var(--arfont);
+	text-align: justify;
+}
+.loy-part h4{
+	text-align: justify;
+}
+.loy-part .ptone{
+	width: 40%;
+	direction: ltr;
+    margin: 0 3em;
+}
+.loy-part .ptone ol li{
+	font-family: var(--arfont);
+	margin: 10px 0;
+}
 
+@media (max-width: 426px){
+	.loy-part .ptone{
+		width: 100%;
+		margin: 1em 3em;
+	}
+	.questions-sandbox{
+		padding: 1em 0;
+		color: var(--fontcolor);
+		background-color: var(--blue);
+	}
+	.loy-part .ptone{
+		margin: 1em;
+	}
+	.loy-part:nth-child(2){
+		/*flex-direction: column-reverse;*/
+	}
+}
+
+/**********************/
 /******************/
 /*     Footer     */
 /******************/
+.mt-4{
+	margin-top: 0!important;
+	background-color: var(--darkbg);
+	padding: 3em;
+    text-align: center;
+}
 .footer {
 	padding-top: 3rem;
 	padding-bottom: 0;
