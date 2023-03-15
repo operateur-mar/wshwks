@@ -1348,6 +1348,36 @@ hr.hr-heading {
 	}
 }
 
+/* map */
+.map {
+	margin: 3em 5em 0 5em; 
+	display: flex;
+	justify-content: center;
+	padding-bottom: 3em;
+}
+.map img{
+	width: 700px;
+}
+.map-sandbox .cities{
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	font-family: var(--arfont);
+}
+/* jobs */ 
+/* JOBS */ 
+.jobs-sandbox{}
+.jobs-sandbox h3{
+	font-size: 1.3em;
+	text-align: center;
+	margin: 2em 0;
+}
+.jobs-sandbox iframe{
+	width: 100%;
+}
+
 /**********************/
 /******************/
 /*     Footer     */
