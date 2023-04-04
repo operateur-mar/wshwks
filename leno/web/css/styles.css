@@ -827,6 +827,7 @@ background-color: var(--darkbg);
 	color: var(--darkbg);
 	text-align: center;
 	font-family: var(--arfont);
+	direction: rtl;
 }
 .products .card-body .wtspbutton{
 	text-align: center;
