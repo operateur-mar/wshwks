@@ -604,6 +604,13 @@ hr.hr-heading {
 	*/background-size: cover;
 	text-align: center; 
 }
+.header .header-content h4{
+	font-size: 20px;
+	margin: 1.5em 0;
+}
+.header .header-content h6{
+	margin: 1.5em 0;
+}
 
 .header .h1-large {
 	margin-bottom: 2.25rem;
@@ -2061,7 +2068,19 @@ hr.hr-heading {
 		flex-direction: row-reverse;
 		
 	}
-	
+	.tabs-1 p{
+		font-family: var(--arfont);
+		margin-top: 10px;
+		font-size: 25px;
+		line-height: 2;
+	}
+	.tabs-1 ul li{
+		font-family: var(--arfont);
+		margin-top: 10px;
+		font-size: 25px;
+		line-height: 2;
+	}
+	}
 	.tabs-1 #tab-1 .list-unstyled.first .flex-grow-1 {
 		margin-left: 0;
 		margin-right: 1rem;
@@ -2069,16 +2088,39 @@ hr.hr-heading {
 	}
 	
 	.tabs-1 #tab-1 img {
-		margin-top: 0;
-		margin-bottom: 0;
+		display: block;
+		margin: 2rem auto 5rem auto;
+		width: 100%;
 	}
-
+	
 	.tabs-1 #tab-2 img {
-		margin-bottom: 0;
+		display: block;
+		margin: 0 auto 4rem auto;
 	}
 
+	.tabs-1 #tab-2 p.sub-heading {
+		margin-bottom: 2.75rem;
+	}
+	
+	.tabs-1 #tab-2 h3 {
+		margin-bottom: 0.75rem;
+	}
+	
+	.tabs-1 #tab-3 h3 {
+		margin-top: 1rem;
+		margin-bottom: 0.75rem;
+		text-align: right;
+	}
+	
 	.tabs-1 #tab-3 p.sub-heading {
-		margin-bottom: 0;
+		margin-bottom: 3rem;
+		text-align: right;
+	}
+	
+	.tabs-1 #tab-3 img {
+		display: block;
+		margin: 1rem auto 2rem auto;
+		width: 100%;
 	}
 	/* end of features */
 
