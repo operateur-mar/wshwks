@@ -1665,9 +1665,39 @@ background-color: var(--darkbg);
 	color: #fff;
 }
 
+/*********************/
+/*     terms     */
+/*********************/
 
+.terms{
+	margin: 0;
+	padding: 0; 
+	text-align: center;
+}
+.terms img{
+	position: relative;
+	z-index: -1;
+}
+.terms .content{
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+	flex-direction: column;
 
-
+}
+.terms .content h2{
+	color: var(--darkbg);
+}
+.terms .content ul li{
+	color: var(--darkbg);
+	font-family: var(--arfont);
+	margin: 3em 0;
+}
 /*********************/
 /*     Copyright     */
 /*********************/

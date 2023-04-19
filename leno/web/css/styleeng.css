@@ -1380,6 +1380,7 @@ hr.hr-heading {
 	font-size: 1.3em;
 	text-align: center;
 	margin: 2em 0;
+	direction: ltr;
 }
 .jobs-sandbox iframe{
 	width: 100%;
