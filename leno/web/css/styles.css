@@ -1314,7 +1314,7 @@ background-color: var(--darkbg);
 	/*margin-bottom: 3em;*/
 }
 .slider-carousal .carousel-item img{
-	height: 700px;
+	height: 760px;
 	object-fit: cover;
 }
 
